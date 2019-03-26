@@ -1,7 +1,5 @@
-firstR <- function(pathToRFile) {
-    source(pathToRFile)
-
-    print(pathToRFile)
+firstR <- function(passedValue) {
+    resourceFinder$sourceResource("r/otherRFunctionInJar.R")
 
     otherRFunctionInJar("Hello Indirectly")
 }
